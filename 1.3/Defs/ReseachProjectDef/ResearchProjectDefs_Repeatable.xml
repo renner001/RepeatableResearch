@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodSmall</defName>
+    <label>Small Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation. 
+
+Will trigger a small Heureka! moment for your colony increasing the colonists mood slightly.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodSmall</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+        <def>RepeatableMoodSmall</def>
+        <heurekaEffect>3</heurekaEffect>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodMedium</defName>
+    <label>Medium Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation.
+
+Will trigger a medium Heureka! moment for your colony increasing the colonists mood.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodMedium</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+        <def>RepeatableMoodMedium</def>
+        <heurekaEffect>6</heurekaEffect>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatableMoodLarge</defName>
+    <label>Large Mood Boost (repeatable)</label>
+    <description>Broaden your understanding of human nature and applied mood manipulation.
+
+Will trigger a medium Heureka! moment for your colony increasing the colonists mood strongly.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatableMoodLarge</def>
+      </li>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+        <def>RepeatableMoodLarge</def>
+        <heurekaEffect>9</heurekaEffect>
+        <heurekaChance>100</heurekaChance>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>Heureka</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <!--<nullifyingPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+    </nullifyingPrecepts>-->
+    <stages>
+      <li>
+        <label>heureka</label>
+        <description>We expanded our knowledge of the universe. I feel humbled by my own insignificance!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

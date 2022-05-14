@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/StatDef[defName = "WorkSpeedGlobal"]/parts</xpath>
+    <value>
+      <li Class="DanielRenner.RepeatableResearch.StatPart_ResearchImpact">
+        <researchImpact>
+          <li>
+            <researchProject>RepeatableFoundationalResearch</researchProject>
+            <!--<multiplierIfFinished>1.0</multiplierIfFinished> <- repeatables will never finish! -->
+            <multiplierRepeatableMultiplierCurve>
+              <points>
+                <li>(0, 1.0)</li>
+                <li>(10, 2)</li>
+                <li>(100, 3)</li>
+              </points>
+            </multiplierRepeatableMultiplierCurve>
+          </li>
+        </researchImpact>
+      </li>
+    </value>
+  </Operation>
+</Patch>

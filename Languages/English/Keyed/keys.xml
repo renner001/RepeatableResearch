@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RepeatableResearch.timesAlreadyResearched>already {0} times researched</RepeatableResearch.timesAlreadyResearched>
+  <RepeatableResearch.statBonusExplanation>Multiplier for {0} x{1}: x{2}%
+</RepeatableResearch.statBonusExplanation>
+  <RepeatableResearch.SettingsPanel>Repeatable research</RepeatableResearch.SettingsPanel>
+
+
+</LanguageData>

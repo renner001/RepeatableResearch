@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <RepeatableResearch.timesAlreadyResearched>schon {0} mal erforscht</RepeatableResearch.timesAlreadyResearched>
+  <RepeatableResearch.statBonusExplanation>Multiplikator für {0} x{1}: x{2}%
+</RepeatableResearch.statBonusExplanation>
+  <RepeatableResearch.SettingsPanel>Wiederholbare Forschung</RepeatableResearch.SettingsPanel>
+</LanguageData>
