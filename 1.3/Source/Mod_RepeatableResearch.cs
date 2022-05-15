@@ -29,7 +29,6 @@ namespace DanielRenner.RepeatableResearch
 			});
         }
 
-
 		public override void WriteSettings()
 		{
 			base.WriteSettings();
