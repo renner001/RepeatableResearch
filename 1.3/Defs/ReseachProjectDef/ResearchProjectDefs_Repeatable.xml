@@ -5,7 +5,7 @@
     <label>Small Mood Boost (repeatable)</label>
     <description>Broaden your understanding of human nature and applied mood manipulation. 
 
-Will trigger a small Heureka! moment for your colony increasing the colonists mood slightly.</description>
+Will trigger a small Heureka! moment for your colony increasing the colonists mood by 3.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Repeatables</tab>
@@ -17,9 +17,9 @@ Will trigger a small Heureka! moment for your colony increasing the colonists mo
       <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
         <def>RepeatableMoodSmall</def>
       </li>
-      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
         <def>RepeatableMoodSmall</def>
-        <heurekaEffect>3</heurekaEffect>
+        <stage>0</stage>
         <heurekaChance>100</heurekaChance>
       </li>
     </researchMods>
@@ -32,7 +32,7 @@ Will trigger a small Heureka! moment for your colony increasing the colonists mo
     <label>Medium Mood Boost (repeatable)</label>
     <description>Broaden your understanding of human nature and applied mood manipulation.
 
-Will trigger a medium Heureka! moment for your colony increasing the colonists mood.</description>
+Will trigger a medium Heureka! moment for your colony increasing the colonists mood by 6.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Repeatables</tab>
@@ -44,9 +44,9 @@ Will trigger a medium Heureka! moment for your colony increasing the colonists m
       <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
         <def>RepeatableMoodMedium</def>
       </li>
-      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
         <def>RepeatableMoodMedium</def>
-        <heurekaEffect>6</heurekaEffect>
+        <stage>1</stage>
         <heurekaChance>100</heurekaChance>
       </li>
     </researchMods>
@@ -59,7 +59,7 @@ Will trigger a medium Heureka! moment for your colony increasing the colonists m
     <label>Large Mood Boost (repeatable)</label>
     <description>Broaden your understanding of human nature and applied mood manipulation.
 
-Will trigger a medium Heureka! moment for your colony increasing the colonists mood strongly.</description>
+Will trigger a large Heureka! moment for your colony increasing the colonists mood by 9.</description>
     <baseCost>6000</baseCost>
     <techLevel>Industrial</techLevel>
     <tab>Repeatables</tab>
@@ -71,14 +71,39 @@ Will trigger a medium Heureka! moment for your colony increasing the colonists m
       <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
         <def>RepeatableMoodLarge</def>
       </li>
-      <li Class="DanielRenner.RepeatableResearch.ResearchMod_HeurekaCandidate">
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_MoodBoost">
         <def>RepeatableMoodLarge</def>
-        <heurekaEffect>9</heurekaEffect>
+        <stage>2</stage>
         <heurekaChance>100</heurekaChance>
       </li>
     </researchMods>
     <!--<tab>StatUpgrades</tab>-->
     <researchViewX>2</researchViewX>
     <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentGlobalWorkSpeed</defName>
+    <label>Global Work Speed (repeatable)</label>
+    <description>Raise awareness for daily morning routines based on Space-Yoga. This will improve mobility across all your colonists.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentGlobalWorkSpeed</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 </Defs>

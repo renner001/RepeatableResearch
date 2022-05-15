@@ -12,6 +12,9 @@ namespace DanielRenner.RepeatableResearch
     [HarmonyPatch(typeof(ResearchManager), nameof(ResearchManager.ResetAllProgress))]
     public static class Patch_ResearchManager
     {
+        /// <summary>
+        /// on a complete reset of all research, also reset the counter of number of completions
+        /// </summary>
         public static void Postfix()
         {
             var repeatableResearchGameComponent = Current.Game?.GetComponent<GameComponent_ResearchRepeatTracker>();

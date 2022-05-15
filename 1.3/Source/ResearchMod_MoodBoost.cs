@@ -9,12 +9,13 @@ using Verse;
 
 namespace DanielRenner.RepeatableResearch
 {
-    class ResearchMod_HeurekaCandidate : ResearchMod
+    class ResearchMod_MoodBoost : ResearchMod
     {
         // the research project this mod has been attached to
         public ResearchProjectDef def;
         // heureka chances between 100f = 100% and 0f = 0%
         public float heurekaChance;
+        public int stage = 0;
 
         public override void Apply()
         {
@@ -33,17 +34,17 @@ namespace DanielRenner.RepeatableResearch
                 {
                     if (Rand.Range(0, 100) <= heurekaChance)
                     {
-                        Log.Debug("Dice won for applying '" + DefOfs_RepeatableResearch.Heureka.defName + "' thought to pawn '" + pawn.Name + "'");
-                        pawn.needs.mood.thoughts.memories.TryGainMemory((Thought_Memory)ThoughtMaker.MakeThought(DefOfs_RepeatableResearch.Heureka));
+                        Log.Debug("Dice won for applying '" + DefOfs_RepeatableResearch.MoodBoost.defName + "' thought to pawn '" + pawn.Name + "'");
+                        pawn.needs.mood.thoughts.memories.TryGainMemory((Thought_Memory)ThoughtMaker.MakeThought(DefOfs_RepeatableResearch.MoodBoost, stage));
                     }
                     else
                     {
-                        Log.Debug("Dice loss for applying '" + DefOfs_RepeatableResearch.Heureka.defName + "' thought to pawn '" + pawn.Name + "'");
+                        Log.Debug("Dice loss for applying '" + DefOfs_RepeatableResearch.MoodBoost.defName + "' thought to pawn '" + pawn.Name + "'");
                     }
                 } 
                 else
                 {
-                    Log.Debug("Cannot apply '" + DefOfs_RepeatableResearch.Heureka.defName + "' thought to pawn '" + pawn.Name + "', since he has no mood");
+                    Log.Debug("Cannot apply '" + DefOfs_RepeatableResearch.MoodBoost.defName + "' thought to pawn '" + pawn.Name + "', since he has no mood");
                 }
             }
         }
