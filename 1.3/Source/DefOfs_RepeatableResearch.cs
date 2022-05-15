@@ -17,6 +17,10 @@ namespace DanielRenner.RepeatableResearch
         public static ResearchProjectDef RepeatableMoodMedium;
         public static ResearchProjectDef RepeatableMoodLarge;
 
-        public static ResearchProjectDef RepeatablePermanentGlobalWorkSpeed; 
+        public static ResearchProjectDef RepeatablePermanentGlobalWorkSpeed;
+        public static ResearchProjectDef RepeatablePermanentMiningYield;
+        public static ResearchProjectDef RepeatablePermanentMedicalTendQuality;
+        public static ResearchProjectDef RepeatablePermanentPlantYield;
+        public static ResearchProjectDef RepeatablePermanentButcheryYield;
     }
 }

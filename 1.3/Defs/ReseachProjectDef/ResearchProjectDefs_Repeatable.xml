@@ -83,7 +83,7 @@ Will trigger a large Heureka! moment for your colony increasing the colonists mo
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>RepeatablePermanentGlobalWorkSpeed</defName>
-    <label>Global Work Speed (repeatable)</label>
+    <label>Global Work Speed Boost (repeatable)</label>
     <description>Raise awareness for daily morning routines based on Space-Yoga. This will improve mobility across all your colonists.
 
 Completing this research multiple times will improve the effects further.
@@ -104,6 +104,106 @@ Completing this research multiple times will improve the effects further.
     </researchMods>
     <!--<tab>StatUpgrades</tab>-->
     <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentMiningYield</defName>
+    <label>Mining Yield Boost (repeatable)</label>
+    <description>Lower waste while mining for ore with the benefit of increasing the yield everytime you mine a resource.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentMiningYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentMedicalTendQuality</defName>
+    <label>Tend Quality Boost (repeatable)</label>
+    <description>Always wash your hand before tending to the sick - never forget!
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentMedicalTendQuality</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentPlantYield</defName>
+    <label>Plant Yield Boost (repeatable)</label>
+    <description>Try not to step on plants - ever.
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentPlantYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>RepeatablePermanentButcheryYield</defName>
+    <label>Butchery Yield Boost (repeatable)</label>
+    <description>You can eat that, don't throw it away!
+
+Completing this research multiple times will improve the effects further.
+1-10: 2 % each
+10-100: 1% each
+100+: 0.1% each</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Repeatables</tab>
+    <!--<prerequisites>
+      <li>ProductivityII</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>-->
+    <researchMods>
+      <li Class="DanielRenner.RepeatableResearch.ResearchMod_Repeatable">
+        <def>RepeatablePermanentButcheryYield</def>
+      </li>
+    </researchMods>
+    <!--<tab>StatUpgrades</tab>-->
+    <researchViewX>4</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 </Defs>

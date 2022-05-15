@@ -23,7 +23,10 @@ namespace DanielRenner.RepeatableResearch
                 {
                     float repeats = repeatableResearchGameComponent.GetFinishedRepeats(impact.researchProject);
                     float multiplier = impact.multiplierRepeatableMultiplierCurve.Evaluate(repeats);
-                    explanation += "RepeatableResearch.statBonusExplanation".Translate(impact.researchProject.label, repeats, multiplier * 100);
+                    if (multiplier > 0)
+                    {
+                        explanation += "RepeatableResearch.statBonusExplanation".Translate(impact.researchProject.label, repeats, multiplier * 100);
+                    }
                 }
             }
             Log.DebugOnce(explanation);
