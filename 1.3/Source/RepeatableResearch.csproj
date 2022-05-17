@@ -65,17 +65,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building_RennBase.cs" />
+    <Compile Include="Building_RennPond.cs" />
+    <Compile Include="CompProperties_SpecificRefuelable.cs" />
+    <Compile Include="Comp_SpecificRefuelable.cs" />
+    <Compile Include="DefOfs_RennOrganisms.cs" />
+    <Compile Include="GameComponent_RennPondManager.cs" />
     <Compile Include="ModSettings_RepeatableResearch.cs" />
     <Compile Include="Patch_MainTabWindowResearch.cs" />
     <Compile Include="Patch_ResearchManager.cs" />
     <Compile Include="Mod_RepeatableResearch.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="Patch_StorytellerUtility.cs" />
+    <Compile Include="Patch_ThingListGroupHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResearchMod_MoodBoost.cs" />
     <Compile Include="ResearchMod_Repeatable.cs" />
     <Compile Include="GameComponent_ResearchRepeatTracker.cs" />
     <Compile Include="StatPart_ResearchImpact.cs" />
     <Compile Include="DefOfs_RepeatableResearch.cs" />
+    <Compile Include="Textures_RennOrganisms.cs" />
     <Compile Include="ThoughtWorker_MoodBoost.cs" />
     <Compile Include="Translations_RepeatableResearch.cs" />
   </ItemGroup>

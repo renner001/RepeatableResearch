@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  <!-- RennPond -->
   <ThingDef ParentName="BuildingBase">
     <defName>RennPond</defName>
     <label>renn pond</label>
     <description>A pond inhabited by renn micro organisms. Renn microbes have a peculiar connection to reality. Anchient stories speak of friends to the microbes always have been favored by luck and yet rarely has a society existed for long.</description>
-    <thingClass>Building</thingClass>
+    <thingClass>DanielRenner.RepeatableResearch.Building_RennPond</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <texPath>Building_RennPond/RennPond</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6,6)</drawSize>
       <shadowData>
@@ -35,12 +35,13 @@
     <tickerType>Normal</tickerType>
     <size>(6,6)</size>
     <costList>
-      <Wood>100</Wood>
+      <WoodLog>100</WoodLog>
     </costList>
     <comps>
-      <li Class="CompProperties_Flickable" />
-      <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>4.5</fuelConsumptionRate>
+      <li Class="DanielRenner.RepeatableResearch.CompProperties_SpecificRefuelable">
+      <!--<li Class="CompProperties_Refuelable">-->
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <!--<showFuelGizmo>true</showFuelGizmo>-->
         <fuelCapacity>30.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -73,6 +74,7 @@
     </researchPrerequisites>-->
     <!--<constructionSkillPrerequisite>0</constructionSkillPrerequisite>-->
   </ThingDef>
+  <!-- RennReactor-->
   <ThingDef ParentName="BuildingBase">
     <defName>RennReactor</defName>
     <label>renn reactor</label>
@@ -80,7 +82,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <texPath>Building_RennReactor/RennReactor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6,6)</drawSize>
       <shadowData>
@@ -129,6 +131,7 @@
     </researchPrerequisites>-->
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
+  <!-- RennPortal -->
   <ThingDef ParentName="BuildingBase">
     <defName>RennPortal</defName>
     <label>renn gate</label>
@@ -136,7 +139,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <texPath>Building_RennPortal/RennPortal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(6,6)</drawSize>
       <shadowData>
@@ -186,8 +189,7 @@
     </researchPrerequisites>-->
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
-
-
+  <!-- Plant_RennFiber -->
   <ThingDef ParentName="PlantBase">
     <defName>Plant_RennFiber</defName>
     <label>renn fiber plant</label>
@@ -197,12 +199,11 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/CottonPlant</texPath>
+      <texPath>Plant_RennFiber/RennFiber</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
     <pathCost>14</pathCost>
-    <ingestible />
     <plant>
       <growDays>8</growDays>
       <dieIfLeafless>true</dieIfLeafless>
@@ -218,15 +219,15 @@
       <wildOrder>2</wildOrder>
     </plant>
   </ThingDef>
-  
+  <!-- RennFiber -->
   <ThingDef ParentName="ResourceBase">
     <defName>RennFiber</defName>
     <label>renn fiber</label>
     <description>Ren fibers are the main nutrition for the name-giving renn microbes. Can be fed to the renn pond.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Cloth</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(100,100,100)</color>
+      <texPath>RennFiber/RennFiber</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<color>(100,100,100)</color>-->
     </graphicData>
     <statBases>
       <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
@@ -283,7 +284,7 @@
     </colorGeneratorInTraderStock>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
+  <!-- Plant_RennFiberDomestic-->
   <ThingDef ParentName="PlantBase">
     <defName>Plant_RennFiberDomestic</defName>
     <label>domestic renn fiber plant</label>
@@ -293,12 +294,11 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Devilstrand</texPath>
+      <texPath>Plant_RennFiberDomestic/RennFiberDomestic</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
     <pathCost>14</pathCost>
-    <ingestible />
     <plant>
       <growDays>8</growDays>
       <sowWork>200</sowWork>
@@ -319,15 +319,15 @@
       <wildOrder>2</wildOrder>
     </plant>
   </ThingDef>
-
+  <!-- RennFiberDomestic -->
   <ThingDef ParentName="ResourceBase">
     <defName>RennFiberDomestic</defName>
     <label>domestic renn fiber</label>
     <description>Domestic ren fibers are the result of years of crossbreeding and a more nutrituous alternative for the name-giving renn microbes. Can be fed to the renn pond directly or further enhanced in the drug cabinet to create renn powder.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Cloth</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(200,200,200)</color>
+      <texPath>RennFiberDomestic/RennFiberDomestic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<color>(200,200,200)</color>-->
     </graphicData>
     <statBases>
       <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
@@ -384,8 +384,7 @@
     </colorGeneratorInTraderStock>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
-
+  <!-- RennPowder -->
   <ThingDef ParentName="ResourceBase">
     <defName>RennPowder</defName>
     <label>renn powder</label>
@@ -415,22 +414,21 @@
       </li>
     </comps>
   </ThingDef>
-
-
+  <!-- Plant_RennFiberEngineered -->
   <ThingDef ParentName="PlantBase">
     <defName>Plant_RennFiberEngineered</defName>
     <label>engineered renn fiber plant</label>
     <description>A genetically engineered sub-culture of the renn fiber that yields the most potent fiber imaginable. Sadly lost it's hardiness in the engineering process and only grows in hydroponics anymore. /n The raw fiber cannot be digested anymore and must be further enhanced in a drug cabinet to produce Renn Concentrate - the most potent food for their name-giving renn microbes.</description>
     <statBases>
+      <Nutrition>0.1</Nutrition>
       <MaxHitPoints>40</MaxHitPoints>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Devilstrand</texPath>
+      <texPath>Plant_RennFiberEngineered/RennFiberEngineered</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
     <pathCost>14</pathCost>
-    <ingestible />
     <plant>
       <growDays>8</growDays>
       <sowWork>400</sowWork>
@@ -451,15 +449,15 @@
       <wildOrder>2</wildOrder>
     </plant>
   </ThingDef>
-
+  <!-- RennFiberEngineered -->
   <ThingDef ParentName="ResourceBase">
     <defName>RennFiberEngineered</defName>
     <label>engineered renn fiber</label>
     <description>Genetically engineered ren fibers are the result of strong genetic modifications and a most nutrituous alternative for the name-giving renn microbes. While it cannot be fed to the renn microbes directly anymore, it can be further enhanced in the drug cabinet to create renn concentrate - the most powerful nutrition to renn microbes known to mankind.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Cloth</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(255,255,255)</color>
+      <texPath>RennFiberEngineered/RennFiberEngineered</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<color>(255,255,255)</color>-->
     </graphicData>
     <statBases>
       <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
@@ -516,8 +514,7 @@
     </colorGeneratorInTraderStock>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
-
+  <!-- RennConcentrate-->
   <ThingDef ParentName="ResourceBase">
     <defName>RennConcentrate</defName>
     <label>renn concentrate</label>
@@ -547,8 +544,7 @@
       </li>
     </comps>
   </ThingDef>
-
-
+  <!-- RennCapsule -->
   <ThingDef ParentName="ResourceBase">
     <defName>RennCapsule</defName>
     <label>renn capsule</label>
@@ -580,8 +576,7 @@
     </thingSetMakerTags>-->
     <allowedArchonexusCount>5</allowedArchonexusCount>
   </ThingDef>
-
-
+  <!-- UnfinishedRennCapsule -->
   <ThingDef ParentName="UnfinishedBase">
     <defName>UnfinishedRennCapsule</defName>
     <label>unfinished renn capsule</label>

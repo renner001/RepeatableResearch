@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
+  <!-- Make_RennPowder -->
   <RecipeDef>
     <defName>Make_RennPowder</defName>
     <label>make powder from domestic renn fiber</label>
@@ -33,7 +32,7 @@
       <RennPowder>10</RennPowder>
     </products>
   </RecipeDef>
-
+  <!-- Make_RennConcentrate -->
   <RecipeDef>
     <defName>Make_RennConcentrate</defName>
     <label>make concentrate from engineered renn fiber</label>
@@ -65,7 +64,7 @@
       <RennConcentrate>10</RennConcentrate>
     </products>
   </RecipeDef>
-  
+  <!-- Make_RennCapsule -->
   <RecipeDef>
     <defName>Make_RennCapsule</defName>
     <label>make renn capsule</label>
@@ -118,5 +117,4 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
-
 </Defs>
