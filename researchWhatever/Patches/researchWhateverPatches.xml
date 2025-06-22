@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="RepeatableMoodSmall"]/modExtensions</xpath>
+        <value>
+          <li Class="ResearchWhatever.ResearchWhateverExtansion">
+            <ignore>true</ignore>
+          </li>
+        </value>
+      </Operation>
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="RepeatableMoodMedium"]/modExtensions</xpath>
+        <value>
+          <li Class="ResearchWhatever.ResearchWhateverExtansion">
+            <ignore>true</ignore>
+          </li>
+        </value>
+      </Operation>
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="RepeatableMoodLarge"]/modExtensions</xpath>
+        <value>
+          <li Class="ResearchWhatever.ResearchWhateverExtansion">
+            <ignore>true</ignore>
+          </li>
+        </value>
+      </Operation>
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="RepeatablePermanentGlobalWorkSpeed"]/modExtensions</xpath>
+        <value>
+          <li Class="ResearchWhatever.ResearchWhateverExtansion">
+            <ignore>true</ignore>
+          </li>
+        </value>
+      </Operation>
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="RepeatablePermanentMiningYield"]/modExtensions</xpath>
+        <value>
+          <li Class="ResearchWhatever.ResearchWhateverExtansion">
+            <ignore>true</ignore>
+          </li>
+        </value>
+      </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="RepeatablePermanentMedicalTendQuality"]/modExtensions</xpath>
+    <value>
+      <li Class="ResearchWhatever.ResearchWhateverExtansion">
+        <ignore>true</ignore>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="RepeatablePermanentPlantYield"]/modExtensions</xpath>
+    <value>
+      <li Class="ResearchWhatever.ResearchWhateverExtansion">
+        <ignore>true</ignore>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="RepeatablePermanentButcheryYield"]/modExtensions</xpath>
+    <value>
+      <li Class="ResearchWhatever.ResearchWhateverExtansion">
+        <ignore>true</ignore>
+      </li>
+    </value>
+  </Operation>
+  
+</Patch>
